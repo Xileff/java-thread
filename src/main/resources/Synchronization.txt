@@ -1,0 +1,10 @@
+Cara sinkronisasi
+- synchronized method
+    bikin method hanya bisa diakses sama 1 thread pada satu waktu (implementasi queueing, bikin method lebih lama kalau diakses byk thread, tapi aman dari racing condition)
+
+    note : secara internal menerapkan IntrinsicLock ke method, sehingga seluruh isi method akan di-lock
+
+- synchronized statement
+    kita bisa nge-lock sebagian kode di dalam method
+
+    note : harus menentukan object IntrinsicLock sendiri
