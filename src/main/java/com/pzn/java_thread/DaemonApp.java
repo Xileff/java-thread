@@ -14,6 +14,6 @@ public class DaemonApp {
         thread.setDaemon(false);
         thread.start();
 
-        System.out.println("App finished");
+        System.out.println("App finished"); // this code will run first, because there is 3000ms delay in the other thread
     }
 }

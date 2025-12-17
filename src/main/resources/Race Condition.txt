@@ -1,0 +1,1 @@
+Race condition : a condition when the same data is being updated by multiple threads at the exact same time, which may cause inconsistency
