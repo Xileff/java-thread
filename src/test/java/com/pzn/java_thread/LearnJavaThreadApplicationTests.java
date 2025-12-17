@@ -79,4 +79,18 @@ class LearnJavaThreadApplicationTests {
 
         thread.start();
     }
+
+    @Test
+    void threadState() throws InterruptedException {
+        final Thread thread = new Thread(() -> {
+            System.out.println("Thread state 2 : " + Thread.currentThread().getState());
+        });
+
+        System.out.println("Thread state 1 : " + thread.getState());
+
+        thread.start();
+        thread.join();
+
+        System.out.println("Thread state 3 : " + thread.getState());
+    }
 }

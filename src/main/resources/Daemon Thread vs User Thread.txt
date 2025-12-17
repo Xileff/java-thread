@@ -1,0 +1,7 @@
+By default, any thread we create is an "User Thread".
+
+Java app will wait for every user thread to finish before finally stopping -> graceful shutdown
+
+Java app will not wait for daemon threads to finish before stopping.
+
+However, when we run "System.exit()", then user threads will also be stopped before finishing.
